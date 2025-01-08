@@ -1,5 +1,5 @@
 # aim-trainer
-🎯 Vanilla JS aim trainer, using only CSS, JS and HTML.
+🎯 Aim-Trainer for IIT Guwahati Hackathon By Team BizGeneus.
 
 ![demo](assets/websitedesign.png)
 
