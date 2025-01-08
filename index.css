@@ -1,0 +1,122 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header span {
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Score Container */
+#score-container {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Controls */
+#controls {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#controls button {
+  background: #ff5f6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#controls button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#controls input {
+  padding: 10px;
+  border: 2px solid #ff758c;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  background: #fff5f8;
+  color: #333;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-top: 10px; /* Add this line to lower the labels */
+}
+
+
+/* Aim Trainer Container */
+/* Aim Trainer Container */
+#aim-trainer {
+  width: 80%;
+  height: 60vh;
+  border: 2px dashed #ffffff;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Target */
+.target {
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff6f91, #ff5f6d);
+  border: 3px solid white;
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.target:hover {
+  transform: scale(1.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
